@@ -140,15 +140,24 @@
     text-align: center;
     z-index: 998;
   }
-  
-  
-  @media screen and (max-width: 480px) {
-  
-    .social-panel-container.visible {
-      transform: translateX(0px);
+
+  @media only screen 
+   and (max-width : 1200px) {
+    .faqMain {
+      height: 1000px;
     }
-    
-    .floating-btn {
-      display: none;
+}
+
+@media only screen 
+   and (max-width : 768px) {
+    .faqMain {
+      height: 1000px;
     }
+}
+
+@media only screen 
+   and (max-width : 480px) {
+  .faqMain {
+    height: 1000px;
   }
+}

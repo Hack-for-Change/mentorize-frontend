@@ -7,7 +7,7 @@
     height: 83px;
 }
 
-.above_footer__title {
+.above_footer_title {
     color: #FFF;
     font-size: 18px;
     font-style: normal;
@@ -51,4 +51,42 @@ line-height: 133.5%;
 letter-spacing: -0.09px;
 text-transform: uppercase;
 padding-bottom: 10px;
+}
+
+
+@media only screen 
+   and (max-width : 1200px) {
+  
+}
+
+@media only screen 
+   and (max-width : 768px) {
+    .footer_geral {
+        height: 400px;
+        gap: 50px;
+    }
+}
+
+@media only screen 
+   and (max-width : 480px) {
+    .above_footer {
+        padding: 0% 5%;
+    }
+    .sociais {
+        gap: 10px;
+    }
+    .above_footer_title {
+    font-size: 13px;
+    }
+    .footer_geral {
+        flex-direction: column;
+        justify-content: center;
+        height: 600px;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .footer_menus {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
 }

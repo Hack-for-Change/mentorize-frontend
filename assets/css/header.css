@@ -3,18 +3,19 @@
     list-style-type: none;
     font-weight: 500;
     line-height: 18px;
-    gap: 55px;
+    gap: 25px;
 }
 
 nav {
     display: flex;
-    gap: 300px;
     background-color: #c0bceb;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 2% 0%;
     font-size: 1.2rem;
     line-height: 18px;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
     width: 100%;
 }
 
@@ -138,4 +139,97 @@ h1 {
 
 .minidiv__icon2 {
     width: 65px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .header_desc {
+        max-width: 80%;
+        font-size: 1rem;
+    }
+
+    .header__right {
+        margin-left: 50px;
+        background-position: 50% -500%, 50% 80%, 50% 75%;
+    }
+
+    .header__left {
+        width: 40%;
+    }
+
+    header {
+
+        height: 706px;
+    }
+
+    .educacao,
+    .alunos {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav_logo {
+        display: none;
+    }
+
+    nav {
+        max-width: 100%;
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+
+    .header__left {
+        width: 90%;
+    }
+
+    .header_desc {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .header__right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav_logo {
+        display: none;
+    }
+    .main_nav {
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 1rem;
+    }
+
+    .header__left {
+        width: 90%;
+    }
+
+    .header_desc {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .header__right {
+        display: none;
+    }
+
+    .educacao,
+    .alunos {
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        text-align: center;
+    }
 }

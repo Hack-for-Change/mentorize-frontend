@@ -80,3 +80,74 @@
     left: 73%;
     top: 40%;
 }
+
+@media only screen and (max-width : 1770px) {
+    .alunosImg {
+        right: 77%;
+        top: 40%;
+    }
+    
+    .trabalhadorImg {
+        left: 80%;
+        top: 40%;
+    }
+}
+
+@media only screen and (max-width : 1530px) {
+    .alunosImg {
+    display: 
+    none;
+    }
+    
+    .trabalhadorImg {
+        display: 
+        none;
+    }
+}
+
+@media only screen 
+   and (max-width : 1200px) {
+    .cardsFunciona {
+        flex-direction: column;
+    }
+}
+
+@media only screen 
+   and (max-width : 768px) {
+    .comoFunciona {
+        max-width: 100%;
+        height: 850px;
+    }
+
+    .cardsFunciona {
+        max-width: 100%;
+    }
+
+    .comoFuncionaCards {
+        max-width: 60%;
+        align-self: center;
+        height: 280px;
+    }
+}
+
+@media only screen 
+   and (max-width : 480px) {
+    .comoFuncionaTitle {
+        text-align: center;
+    }
+    .comoFunciona {
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .comoFuncionaCards {
+        max-width: 80%;
+        align-self: center;
+        height: 280px;
+    }
+
+    .comoFuncionaDescButton {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+}
