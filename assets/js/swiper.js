@@ -1,3 +1,5 @@
+const divOrigem = document.querySelector(".quarto");
+const divDestino = document.getElementById("destino1");
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -23,4 +25,13 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
+
+  if (window.innerWidth <= 1000) {
+    const prevSeta1 = document.getElementById('prevSeta1');
+    if (prevSeta1) {
+      prevSeta1.remove();
+    }
+    divDestino.appendChild(divOrigem);
+    divDestino.appendChild(prevSeta1);
+  }
 }

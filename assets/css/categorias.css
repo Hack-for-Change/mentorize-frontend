@@ -31,23 +31,29 @@
 
 .card4 {
   background-image: url(../img/card4.svg);
+  background-position: center;
   background-repeat: no-repeat;
-  border-radius: 12px, 12px, 0px, 0px;
+  background-size: cover;
 }
 
 .card5 {
   background-image: url(../img/card5.svg);
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card6 {
   background-image: url(../img/card6.svg);
-  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card7 {
   background-image: url(../img/card7.svg);
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -96,4 +102,14 @@
 
 .cardsCategorias {
   margin-bottom: 25px;
+}
+
+@media only screen 
+   and (max-width : 480px) {
+    .categorias {
+      height: 100%;
+    }
+    .cardCategorias {
+      align-self: center;
+    }
 }
