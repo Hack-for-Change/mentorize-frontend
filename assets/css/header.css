@@ -1,0 +1,141 @@
+.main_nav {
+    display: flex;
+    list-style-type: none;
+    font-weight: 500;
+    line-height: 18px;
+    gap: 55px;
+}
+
+nav {
+    display: flex;
+    gap: 300px;
+    background-color: #c0bceb;
+    justify-content: center;
+    padding: 2% 0%;
+    font-size: 1.2rem;
+    line-height: 18px;
+    align-items: center;
+    width: 100%;
+}
+
+.button_login {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.12rem;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 0.7% 1.7%;
+    background-color: var(--font-color);
+}
+
+header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 706px;
+    padding: 0% 5%;
+    border: 0px;
+    border-image: url(../img/Rectangle\ 2.svg) 1 1 1 1 fill;
+}
+
+.highlighth1 {
+    background-image: url(../img/Vector\ 5.svg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.header__left {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 200px;
+    justify-content: flex-start;
+}
+
+.header__right {
+    height: 100%;
+    width: 50%;
+    background-image: url(../img/image\ 1.png), url(../img/Ellipse\ 8.svg),  url(../img/Ellipse\ 7.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 50% -600%, 50% 90%, 50% 85%;; 
+}
+
+.header__buttons {
+    padding: 0;
+    display: inline-flex;
+    gap: 21px;
+}
+
+.button__header {
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 2% 5%;
+    border-radius: 8px;
+    line-height: 20px;
+}
+
+.leftheadb {
+    background-color: var(--font-color);
+    color: var(--white);
+}
+
+.rightheadb {
+    color: var(--font-color);
+    border: solid 3px var(--font-color);
+}
+
+h1 {
+    font-size: 5.75rem;
+    font-weight: 700;
+    color: var(--bold-color);
+}
+
+.header_desc {
+    font-weight: 300;
+    color: var(--fourth-color);
+    font-size: 1.5rem;
+}
+
+.minidiv {
+    background-color: var(--white);
+    align-items: center;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 8px;
+    color: var(--bold-color);
+}
+
+.educacao {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    max-width: 212px;
+    max-height: 82px;
+    justify-content: center;
+    position: relative;
+    top: 70%;
+    left: 5%;
+}
+
+.alunos {
+    display: flex;
+    gap: 12px;
+    max-height: 82px;
+    max-width: 193px;
+    padding: 20px;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    top: 40%;
+    left: 60%;
+}
+
+.minidiv__icon1 {
+    width: 52px;
+}
+
+.minidiv__icon2 {
+    width: 65px;
+}
