@@ -1,0 +1,82 @@
+.porque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.porqueTitle {
+    font-weight: 800;
+    font-size: 3rem;
+    padding: 62px 0px;
+    color: var(--bold-color);
+}
+
+.cards {
+    display: flex;
+    gap: 13px;
+}
+
+.card {
+    max-width: 453px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 2px 3px 13px 0px #0000001A;
+    border: 1px solid transparent;
+
+  }
+  
+  .contentCard {
+    padding: 5%;
+    height: 291px;
+    text-align: center;
+  }
+  
+  .imageCard {
+    object-fit: cover;
+    width: 100%;
+    height: 197px;
+  }
+
+  .card1 {
+    background-image: url(../img/card1.svg);
+  }
+
+  .card2 {
+    background-image: url(../img/card2.svg);
+  }
+
+  .card3 {
+    background-image: url(../img/card3.svg);
+  }
+  
+  .titleCard {
+    color: #000000;
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .descCard {
+    margin-top: 1.2rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: left;
+  }
+  
+
+  .porque__button {
+    width: max-content;
+    padding: 20px 36px;
+    background-color: var(--font-color);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.12rem;
+    border-radius: 8px;
+    margin-top: 46px;
+    margin-bottom: 91px;
+  }
