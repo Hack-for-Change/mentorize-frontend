@@ -40,6 +40,15 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 gap: 8px;
 }
 
+placeholder {
+    color: #848484;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
 .dados_left {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
@@ -74,3 +83,49 @@ gap: 8px;
 .dadosSegundo {
     text-align: left;
 }
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen 
+   and (max-width : 768px) {
+    .dados {
+        flex-direction: column;
+        height: 2500px;
+        padding-top: 0px;
+        align-items: center;
+    }
+     .dados_left {
+        align-self: center;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .dados_right {
+        width: 90%;
+    }
+   }
+
+   @media only screen 
+   and (max-width : 480px) {
+
+    .dados {
+        flex-direction: column;
+        height: 3500px;
+        padding-top: 0px;
+    }
+    .dados_left {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
+
+    .dados_right {
+        margin-top: 800px;
+        align-self: center;
+        width: 100%;
+    }
+   } 
