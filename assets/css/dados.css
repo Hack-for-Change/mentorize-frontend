@@ -40,6 +40,15 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 gap: 8px;
 }
 
+placeholder {
+    color: #848484;
+font-family: Raleway;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
 .dados_left {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);

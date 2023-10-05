@@ -5,6 +5,7 @@
 @import url(./valores.css);
 @import url(./dados.css);
 @import url(./footer.css);
+
 :root {
     --font-color: #3B3561;
     --bold-color: #1F1B36;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorize - Login</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./src/app.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./assets/img/7.ico">
+    <link rel="stylesheet" href="./assets/css/loginreg.css">
+</head>
+<body>
+    <main>
+        <div class="mainDiv">
+        <div class="left">
+            <img src="./assets/img/Group 4.svg" alt="Logo" class="logo">
+            <img src="./assets/img/mentorize.svg" alt="Mentorize" class="textoImg">
+        </div>
+        <div class="right">
+           <h1 class="h1main">LOGIN</h1>
+           <div class="login-container">
+            <form id="login-form">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail...">
+                <label for="senha">Senha</label>
+                 <div class="password-container">
+                <input type="password" id="senha" name="senha" required placeholder="Digite sua Senha...">
+                 <div class="toggle-password">
+                    <img src="./assets/img/Eye.png" alt="Toggle Password">
+                    </div>
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="lembrar" name="lembrar">
+                        <label for="lembrar">Mantenha-me conectado</label>
+                    </div>
+                    <a href="#" class="forgot-password">Esqueci minha senha</a>
+                </div>
+                <button type="submit"  class="button_login loginbotao">Entrar <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none">
+                    <path d="M12.9596 5.45962C13.2135 5.20578 13.2135 4.79422 12.9596 4.54038L8.82304 0.403806C8.5692 0.149965 8.15765 0.149965 7.90381 0.403806C7.64997 0.657647 7.64997 1.0692 7.90381 1.32304L11.5808 5L7.90381 8.67696C7.64997 8.9308 7.64997 9.34235 7.90381 9.59619C8.15765 9.85003 8.5692 9.85003 8.82304 9.59619L12.9596 5.45962ZM0.5 5.65H12.5V4.35H0.5V5.65Z" fill="white"/>
+                  </svg></a></button>
+            </form>
+            <hr class="divisoria">
+        <div class="cadastro">
+            <p class="paragrafo">Ainda não tem uma conta? <a href="cadastro.html" class="cadastro"><u>Cadastre-se grátis!</u></a></p>
+        </div>
+        </div>
+    
+        </div>
+    </main>
+
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>
