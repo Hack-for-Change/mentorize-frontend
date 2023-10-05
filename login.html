@@ -20,14 +20,18 @@
            <h1 class="h1main">LOGIN</h1>
            <div class="login-container">
             <form id="login-form">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail...">
-                <label for="senha">Senha</label>
-                 <div class="password-container">
-                <input type="password" id="senha" name="senha" required placeholder="Digite sua Senha...">
+                <div class="coolinput">
+                    <label for="input" class="text">E-mail</label>
+                    <input id="email" type="email" required placeholder="Digite seu e-mail..." name="email" class="input">
+                </div>
+                <div class="coolinput">
+                    <div class="password-container">
+                    <label for="input" class="text">Senha</label>
+                    <input id="senha" type="password" required placeholder="Digite sua senha..." name="senha" class="input">
                  <div class="toggle-password">
                     <img src="./assets/img/Eye.png" alt="Toggle Password">
                     </div>
+                </div>
                     <div id="senhaErrada"></div>
                  </div>
                 <div class="remember-forgot">
@@ -53,5 +57,6 @@
     </main>
 
     <script src="./assets/js/login.js"></script>
+    <script src="loginValidation.js"></script>
 </body>
 </html>

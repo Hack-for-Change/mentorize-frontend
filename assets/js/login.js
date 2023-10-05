@@ -35,3 +35,4 @@ senhaInput.addEventListener('input', function () {
             submitButton.disabled = false;
         }
     });
+
