@@ -1,0 +1,72 @@
+.valores {
+background: url(../img/Rectangle\ 38.svg);
+background-blend-mode: hard-light, normal;
+width: 100%;
+height: 935px;
+background-size: cover;
+}
+
+.valores__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 37px;
+    padding-top: 87px;
+}
+
+.missaoVisao {
+    width: 442px;
+height: 468px;
+flex-shrink: 0;
+border-radius: 12px;
+background: linear-gradient(91deg, rgba(255, 255, 255, 0.98) 0.27%, rgba(255, 255, 255, 0.29) 98.45%);
+backdrop-filter: blur(7.5px);
+display: flex;
+flex-direction: column;
+gap: 28px;
+}
+
+.valores_div {
+width: 442px;
+height: 567px;
+flex-shrink: 0;
+border-radius: 12px;
+background: linear-gradient(91deg, rgba(255, 255, 255, 0.98) 0.27%, rgba(255, 255, 255, 0.29) 98.45%);
+backdrop-filter: blur(7.5px);
+display: flex;
+flex-direction: column;
+gap: 28px;
+}
+
+.div_title{
+    color: #1F1B36;
+font-family: Raleway;
+font-size: 32px;
+font-style: normal;
+font-weight: 800;
+line-height: 108.5%;
+text-transform: uppercase;
+text-align: center;
+}
+
+.iconesValores {
+    padding-top: 30px;
+    max-width: 206px;
+    align-self: center;
+}
+
+.div_p {
+    padding: 0px 31px;
+}
+
+.video {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.videoPlayer {
+    width: 40%;
+}
