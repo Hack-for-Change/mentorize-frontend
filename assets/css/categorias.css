@@ -9,7 +9,7 @@
 
 .cardCategorias {
   width: 308px;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   background-color: #fff;
   box-shadow: 2px 3px 13px 0px #0000001A;
   border: 1px solid transparent;
@@ -33,27 +33,28 @@
   background-image: url(../img/card4.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .card5 {
   background-image: url(../img/card5.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .card6 {
   background-image: url(../img/card6.svg);
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .card7 {
   background-image: url(../img/card7.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 

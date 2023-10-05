@@ -5,6 +5,9 @@
     align-items: center;
     height: 900px;
     max-width: 100%;
+    background-image: url(../img//Rectangle\ 38.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .porqueTitle {
@@ -22,7 +25,7 @@
 
 .card {
     max-width: 453px;
-    border-radius: 8px;
+    border-radius: 16px;
     background-color: #fff;
     box-shadow: 2px 3px 13px 0px #0000001A;
     border: 1px solid transparent;
