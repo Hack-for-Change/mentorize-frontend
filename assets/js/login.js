@@ -1,3 +1,4 @@
+const submitButton = document.getElementById('submitButton');
 
 var lembrarCheckbox = document.getElementById('lembrar');
 lembrarCheckbox.addEventListener('change', function () {
@@ -24,3 +25,13 @@ const senhaInput = document.getElementById('senha');
         }
     });
 
+senhaInput.addEventListener('input', function () {
+        const senha = senhaInput.value;
+        if (senha.length < 8) {
+            senhaErrada.innerHTML = 'A senha deve ter pelo menos 8 dígitos.';
+            submitButton.disabled = true;
+        } else {
+            senhaErrada.innerHTML = ''; 
+            submitButton.disabled = false;
+        }
+    });

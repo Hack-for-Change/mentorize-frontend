@@ -27,7 +27,8 @@
                 <label for="nome">Nome Completo</label>
                 <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo...">
                 <label for="cpf">Documento</label>
-                <input type="text" id="cpf" name="cpf" required placeholder="Digite seu RG ou CPF...">
+                <input type="text" id="cpfField" name="cpf" required placeholder="Digite seu CPF...">
+                <div id="empty"></div>
                 <label for="Categorias" id="catStyle" style="display: none;">Área de Instrução</label>
                 <select id="categorias" name="Categorias" style="display: none;">
                     <option value="Portugues">Português</option>
@@ -44,13 +45,16 @@
                  <div class="toggle-password">
                     <img src="./assets/img/Eye.png" alt="Toggle Password">
                     </div>
-                <button type="submit"  class="register loginbotao">Cadastrar <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none">
+                    <div id="senhaErrada"></div>
+                <button id="submitButton" type="submit"  class="register loginbotao">Cadastrar <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none">
                     <path d="M12.9596 5.45962C13.2135 5.20578 13.2135 4.79422 12.9596 4.54038L8.82304 0.403806C8.5692 0.149965 8.15765 0.149965 7.90381 0.403806C7.64997 0.657647 7.64997 1.0692 7.90381 1.32304L11.5808 5L7.90381 8.67696C7.64997 8.9308 7.64997 9.34235 7.90381 9.59619C8.15765 9.85003 8.5692 9.85003 8.82304 9.59619L12.9596 5.45962ZM0.5 5.65H12.5V4.35H0.5V5.65Z" fill="white"/>
                   </svg></button>
             </form>
             <hr class="divisoria">
         <div class="cadastro">
             <p class="paragrafo">Já tem uma conta? <a href="login.html" class="cadastro"><u>Fazer login</u></a></p>
+            <br>
+            <a class="cadastro" href="index.html">Voltar a página inicial</a>
         </div>
         </div>
         </div>
