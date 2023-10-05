@@ -33,7 +33,7 @@
     align-items: center;
     width: 500px;
     height: 258px;
-    background: var(--sixth-color);
+    background: rgba(221, 219, 219, 0.247);
     backdrop-filter: blur(7.5px);
     border-radius: 8px;
     padding: 5%;

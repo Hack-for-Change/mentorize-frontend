@@ -1,5 +1,5 @@
 .faqMain {
-    height: 700px;
+    height: 800px;
     background-color: var(--sixth-color);
     display: flex;
     flex-direction: column;
@@ -141,6 +141,9 @@
     z-index: 998;
   }
 
+  .faqbotao {
+    align-self: center;
+  }
   @media only screen 
    and (max-width : 1200px) {
     .faqMain {

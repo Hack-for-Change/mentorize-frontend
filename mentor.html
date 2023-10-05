@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentorize</title>
+    <title>Mentorize - Mentor</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/7.ico">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
 </head>
 <body>
-    
-    <nav>
+    <nav class="sobre">
         <div class="nav_logo">
             <svg width="171" height="32" viewBox="0 0 171 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M61.4117 10.6227C62.6258 10.6227 63.709 10.8748 64.6616 11.3791C65.6328 11.8834 66.3893 12.6305 66.9309 13.6204C67.4912 14.6103 67.7714 15.8057 67.7714 17.2065V26.3118H64.6056V17.6828C64.6056 16.3006 64.26 15.2454 63.569 14.5169C62.8779 13.7698 61.9347 13.3963 60.7393 13.3963C59.544 13.3963 58.5914 13.7698 57.8817 14.5169C57.1906 15.2454 56.8451 16.3006 56.8451 17.6828V26.3118H53.6792V17.6828C53.6792 16.3006 53.3337 15.2454 52.6426 14.5169C51.9515 13.7698 51.0083 13.3963 49.813 13.3963C48.6176 13.3963 47.6651 13.7698 46.9553 14.5169C46.2642 15.2454 45.9187 16.3006 45.9187 17.6828V26.3118H42.7249V10.8748H45.9187V12.6398C46.4417 12.0048 47.1047 11.5099 47.9079 11.155C48.711 10.8001 49.5702 10.6227 50.4854 10.6227C51.7181 10.6227 52.8201 10.8842 53.7913 11.4071C54.7625 11.9301 55.5096 12.6865 56.0326 13.6765C56.4995 12.7426 57.2279 12.0048 58.2179 11.4632C59.2078 10.9028 60.2724 10.6227 61.4117 10.6227Z" fill="#1F1B36"/>
@@ -32,273 +31,139 @@
             <li><a href="cadastro.html">Ensinar</a></li>
             <li><a href="https://api.whatsapp.com/send?phone=556183830320&text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20referente%20ao%20projeto%20do%20Mentorize!">Contato</a></li>
         </ul>
-            <a href="login.html" class="button_login">LOGIN <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none">
-              <path d="M12.9596 5.45962C13.2135 5.20578 13.2135 4.79422 12.9596 4.54038L8.82304 0.403806C8.5692 0.149965 8.15765 0.149965 7.90381 0.403806C7.64997 0.657647 7.64997 1.0692 7.90381 1.32304L11.5808 5L7.90381 8.67696C7.64997 8.9308 7.64997 9.34235 7.90381 9.59619C8.15765 9.85003 8.5692 9.85003 8.82304 9.59619L12.9596 5.45962ZM0.5 5.65H12.5V4.35H0.5V5.65Z" fill="white"/>
-            </svg></a>
+           <div class="dropdown">
+  <button class="dropbtn"><svg class="perfil" width="73" height="48" viewBox="0 0 73 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect x="1" y="1" width="71" height="46" rx="9" stroke="#5B5296" stroke-width="2"/>
+    <rect x="11" y="9" width="30" height="30" fill="url(#pattern0)"/>
+    <path d="M51.2929 26.7071C51.6834 27.0976 52.3166 27.0976 52.7071 26.7071L59.0711 20.3431C59.4616 19.9526 59.4616 19.3195 59.0711 18.9289C58.6805 18.5384 58.0474 18.5384 57.6569 18.9289L52 24.5858L46.3431 18.9289C45.9526 18.5384 45.3195 18.5384 44.9289 18.9289C44.5384 19.3195 44.5384 19.9526 44.9289 20.3431L51.2929 26.7071ZM51 25V26H53V25H51Z" fill="#5B5296"/>
+    <defs>
+    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <use xlink:href="#image0_16_2" transform="scale(0.01)"/>
+    </pattern>
+    <image id="image0_16_2" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEjklEQVR4nO2dTYhbVRTHYxWrbvxW8Atd6MoP0I2iMohVBpyad058dHJvprPzA2xFXYgIpiBCN05Nk3Nex0FFiwqj7kQXKopQKFiqIG6tFsUPFEFbtVpn5KRJnOl0vpK8d1+m/x8cCEleyD2/Oe/evHvfnUIBAAAAAAAAAAAAAACQKpuKyZUu0hFPssWRPmHRfBzpiL2G9GfAaEmudyw7POnXnnV26ZADnnXCFevXQU4KIjzLu55lZnkRC8TMONZ3KqTXQkyPDA1VT3Msz3rWf1YvYn44kr89yTP2mRDTBePFHed41o97FbFADMuHcTx5NqSsgjieOs+xfN5vGXPiM3ePngspK2B4uLbeke5JUUb7FPZJHE+fDinL4Fh3pi1jTkxAyBKUo8Zt3Y2kuq0S/bcc7boFUharDpJPM6yOtpS9EHICfEnuzlpGRwrrBkhZ2He8GUqIZ3kDQuYQx8+d6Uj+DFchcthGd5DSqQ65I1x1aDPKkQxBSKczbzwaWogj3Qoh/4+u6qGFeJYahLRHWCSvhhbiWF+BkE6F6OuhhXiS1yCkXSGsL4QW4lh2QUhHiDwdWohneQpCWlRYS8GFUEIQ0hZCelGWFxX9wuqYiePahRAy78Ki7g3Wf5DugYzjKLM+FPB09QCEHMf9I5NnOZYfA5yufrBraRByAiqcPJz56SqSByFjEeJ4+tQs+xLrO6rV6joIWYJKvPMqT/JL6jJYfx6LJ6+AjBXgOLnVk/6Rngw5jLn0VeJJb7a/4hQq41df0ttRGV0wFtWvsUVtfRNCsr/MydWQ0QPDw7X1dp3JkR7qXoT+7liexMK4PlIembzAk2xb2a0I7ZADjrU6FtXP7+d3AfOYPcVT/UbH+rhjfcmRfORZ91nYY3vOszxm77H3zj8WAAAAAAAAAAAAAABwUq5KqVBygyONbclQc/cf1u2eRB3pbgt7bM/Za81lRdS4z46xY0N//4GlWq2usx18Wuu0Ekf6gWc92NvKxuaxB1ufldhn22Y0WOCw2AYzkd7kWR7xrNNpTNsuMbf+myd93+ZZ7E7c8fGXzyicjNiEUYVks2d9u6eZQO6zINJDjuQt+26230phza+5Yt1gVeBJjoROvl922leOWvVYn7Wmpn5HN05d3OqAvwueZO5Wjv50bABRu6wwqNgiNEfy4kBUA6+4ao44lqlNRbm8MCjYPlSO9HnH+lfwBHI60drkYMI2WSvkmTLLRkfybeiE+czE6Pc2ACjk8laCPNxJy8HE7M7NLQ3WV9iKwNBJ8eFjX/C+ZXOcXOpIv8pBMmbzEI7km2BSjnXe8mXoJPichWP5Ikhnn4ftMHxOw4b7mcqoUHJX6Eb7XIfM+FLjzsyEONb3wjdacx22vXkmMuzyQfM6Tw4a7fMcJEdH761fkroQFzWKwRvLgxH2Qzl9IaRbQzfUD0qQbElfCGs1eEN5MMJylbqQ5l1MOWisH4Qg2QYhnAMREKLhkw8hGj7hEKLhkwwhGj6xEKLhkwkhOUgghOQgaTzgQlqL3bYjdNkc4B/FAAAAAAAAAAAAAIDCGuY/8H/kw4x8a0YAAAAASUVORK5CYII="/>
+    </defs>
+    </svg></button>
+  <div class="dropdown-content">
+    <a href="#">Perfil</a>
+    <a href="index.html" id="logoutButton">Sair</a>
+  </div>
+</div>
     </nav>
-    <header>
 
-        <div class="header__left">
-        <h1>Conectando saberes, <span class="highlighth1">transformando</span> vidas.</h1>
-        <p class="header_desc"><strong>Unimos aprendizes</strong> de todas as idades <strong>a educadores</strong> dedicados, em um ambiente onde o ensino e o aprendizado são recompensadores e <strong>de graça para sempre</strong>.</p>
-        <div class="header__buttons">
-        <a href="cadastro.html" class="button__header leftheadb">QUERO SER MENTOR</a>
-        <a href="cadastro.html" class="button__header rightheadb">QUERO SER ALUNO</a>
+    <main>
+        <div class="sobreMais maindiv">
+            <div class="sobreMais_left">
+            <img src="./assets/img/Rectangle55.png" alt="">
+            <a href="#" class="botaozin">EDITAR PERFIL</a>
+        </div>
+        <div class="sobreMais_right">
+            <h2 class="titleSobreMais">MENTORA</h2>
+            <h3 class="mainh3" id="nomeUser">Mariele Camargo</h3>
+            <p class="shortdescri">"Comprometida em orientar outros para alcançarem seu máximo potencial! ✌️"</p>
+            <img src="./assets/img/extra.png" alt="extra avaliacoes" class="extra">
+        </div>
+        </div>
+        <div class="agenda maindiv">
+            <div class="conteudo">
+                <div class="topo">
+            <h3 class="mainh3">AGENDA</h3>
+            <p class="inbox"><img src="./assets/img/EnvelopeDots.png" alt="envelope">&nbsp;2 novas solicitações de mentoria</p>
+        </div>
+            <hr class="divisoriadiv age">
+            <div class="datepicker">
+                <div class="datepicker-top">
+                    <div class="month-selector">
+                <img src="./assets/img/Arrow1.png" alt="seta">
+                        <span class="month-name">Outubro de 2023</span>
+                        <img src="./assets/img/Arrow2.png" alt="seta">
+                    </div>
+                </div>
+                <div class="datepicker-calendar">
+                    <span class="day">Seg</span>
+                    <span class="day">Ter</span>
+                    <span class="day">Qua</span>
+                    <span class="day">Qui</span>
+                    <span class="day">Sex</span>
+                    <span class="day">Sáb</span>
+                    <span class="day">Dom</span>
+                    <button class="date faded"></button>
+                    <button class="date faded"></button>
+                    <button class="date faded"></button>
+                    <button class="date faded"></button>
+                    <button class="date faded"></button>
+                    <button class="date faded"></button>
+                    <button class="date">1</button>
+                    <button class="date">2</button>
+                    <button class="date">3</button>
+                    <button class="date">4</button>
+                    <button class="date">5</button>
+                    <button class="date highlight-day">6</button>
+                    <button class="date">7</button>
+                    <button class="date">8</button>
+                    <button class="date">9</button>
+                    <button class="date">10</button>
+                    <button class="date">11</button>
+                    <button class="date">12</button>
+                    <button class="date highlight-day">13</button>
+                    <button class="date highlight-day">14</button>
+                    <button class="date">15</button>
+                    <button class="date">16</button>
+                    <button class="date">17</button>
+                    <button class="date">18</button>
+                    <button class="date">19</button>
+                    <button class="date">20</button>
+                    <button class="date">21</button>
+                    <button class="date highlight-day">22</button>
+                    <button class="date">23</button>
+                    <button class="date">24</button>
+                    <button class="date">25</button>
+                    <button class="date">26</button>
+                    <button class="date">27</button>
+                    <button class="date">28</button>
+                    <button class="date">29</button>
+                    <button class="date">30</button>
+                    <button class="date">31</button>
+
+                </div>
+            </div>
         </div>
     </div>
-        <div class="header__right">
-            <div class="minidiv educacao">
-                <img src="./assets/img/ICON.png" alt="lápis" class="minidiv__icon1">
-                EDUCAÇÃO & MENTORIA</div>
-                <div class="minidiv alunos">
-                    <img src="./assets/img/23.png" alt="23" class="minidiv__icon2">
-                    MIL<br>ALUNOS</div>
-            </div>
-    </header>
-    <main>
-      <section class="categorias" id="Cursos">
-            <h2 class="porqueTitle">O que você pode aprender ou ensinar?</h2>
-            
-            <div class="cards cardsCategorias">
-                <a class="prev setas" onclick="plusSlides(-1)"><img src="./assets/img/Arrow1.png" alt="seta"></a>
-                <div class="cardCategorias">
-                    <div class="imageCard card4"></div>
-                     <div class="contentCardCategoria">
-                         <span class="titleCardCategoria">
-                            PORTUGUÊS
-                         </span>
-                   
-                       <p class="descCardCategoria">
-                        <img src="./assets/img/image4.svg" alt="Formando" class="imagemIconCategoria">
-                        &nbsp;Básico ao avançado
-                        </p>
-                        <p class="descCardCategoria">
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="5" cy="5" r="5" fill="#24FF00"/>
-                                </svg>
-                                &nbsp;100 mentores disponíveis
-                            </p>
+        <div class="visaoGeral maindiv">
+            <div class="conteudo">
+            <h3 class="mainh3">VISÃO GERAL</h3>
+            <hr class="divisoriadiv">
+            <p class="titulodescricao">🕗 <strong class=strongtitulo>Quantidade total de horas de mentoria:</strong> 2.100 horas 📑</p>
+            <hr class="divisoriadiv">
+            <p class="titulodescricao">🥇 <strong class=strongtitulo>Ranking Mentorize:</strong> Você está em <strong class=strongtitulo>12º lugar</strong>, parabéns! 🥳 </p>
+            <hr class="divisoriadiv">
+            <div class="principalprogresso">
+                <h3 class="principaltitulo">🎯 PROGRESSO</h3>
+                <div class="categoriass">
+                    <div class="geografia categoriadiv">
+                        <img src="./assets/img/geografia.png" alt="">
+                        <p class="nomeCategoria">Geografia</p>
+                        <p class="porcentagem">50%</p>
+                        <p class="falta faltaGeo">Faltam 50% (15 horas) para obter seu certificado de 30 horas</p>
                     </div>
-                   </div>
-                   <div class="cardCategorias">
-                    <div class="imageCard card5"></div>
-                     <div class="contentCardCategoria">
-                         <span class="titleCardCategoria">
-                           MATEMÁTICA
-                         </span>
-                   
-                       <p class="descCardCategoria">
-                        <img src="./assets/img/image4.svg" alt="Formando" class="imagemIconCategoria">
-                        &nbsp;Básico ao avançado
-                        </p>
-                        <p class="descCardCategoria">
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="5" cy="5" r="5" fill="#24FF00"/>
-                                </svg>
-                                &nbsp;125 mentores disponíveis
-                            </p>
-                   
-                     </div>
-                   </div>
-                   <div class="cardCategorias terceiro">
-                    <div class="imageCard card6"></div>
-                     <div class="contentCardCategoria">
-                         <span class="titleCardCategoria">
-                            GEOGRAFIA
-                         </span>
-                   
-                       <p class="descCardCategoria">
-                        <img src="./assets/img/image4.svg" alt="Formando" class="imagemIconCategoria">
-                        Básico ao avançado
-                       </p>
-                       <p class="descCardCategoria">
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="5" cy="5" r="5" fill="#24FF00"/>
-                            </svg>
-                            &nbsp;255 mentores disponíveis
-                        </p>
-
+                    <div class="yoga categoriadiv">
+                        <img src="./assets/img/yoga.png" alt="">
+                        <p class="nomeCategoria">Yoga</p>
+                        <p class="porcentagem">72%</p>
+                        <p class="falta faltaYo">Faltam 28% (12.6 horas) para obter seu certificado de 45 horas</p>
                     </div>
-                   </div>
-                   <div class="cardCategorias quarto">
-                    <div class="imageCard card7"></div>
-                     <div class="contentCardCategoria">
-                         <span class="titleCardCategoria">
-                            HISTÓRIA
-                         </span>
-                   
-                       <p class="descCardCategoria">
-                        <img src="./assets/img/image4.svg" alt="Formando" class="imagemIconCategoria">
-                        &nbsp;Básico ao avançado
-                       </p>
-                       <p class="descCardCategoria">
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="5" cy="5" r="5" fill="#24FF00"/>
-                            </svg>
-                            &nbsp;321 mentores disponíveis
-                        </p>
-                     </div>
-                   </div>
-                   <a class="prev setas" onclick="plusSlides(1)"><img src="./assets/img/Arrow2.png" alt="seta"></a>
-                </div> 
-                <div class="cards cardsCategorias" id="destino1">
-                    <a class="prev setas" onclick="plusSlides(-1)"><img src="./assets/img/Arrow1.png" alt="seta"></a>
-                    <div class="cardCategorias">
-                        <div class="imageCard card4"></div>
-                         <div class="contentCardCategoria">
-                             <span class="titleCardCategoria">
-                                INGLÊS
-                             </span>
-                       
-                           <p class="descCardCategoria">
-                            <img src="./assets/img/image4.svg" alt="Formando" class="imagemIconCategoria">
-                            &nbsp;Básico ao avançado
-                            </p>
-                            <p class="descCardCategoria">
-                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="5" cy="5" r="5" fill="#24FF00"/>
-                                    </svg>
-                                    &nbsp;534 mentores disponíveis
-                                </p>
-                        </div>
-                       </div>
-                       <a id="prevSeta1" class="prev setas" onclick="plusSlides(1)"><img src="./assets/img/Arrow2.png" alt="seta"></a>
-                </div> 
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                  </div>
-        </section>
-    <section class="porque" id="porque">
-        <h2 class="porqueTitle">Por que se juntar à Mentorize?</h2>
-        <div class="cards">
-            <div class="card">
-                <div class="imageCard card1"></div>
-                 <div class="contentCard">
-                     <span class="titleCard">
-                      SUPeramos as barreiras no caminho do crescimento
-                     </span>
-               
-                   <p class="descCard">
-                    <br>
-                    Sejam elas a falta de recursos educacionais acessíveis para estudantes ou a necessidade de experiência prática comprovada para quem pode educar.
-                    <br><br>
-                    A nossa escalabilidade possibilita qualquer pessoa, em qualquer lugar do mundo, acessar uma educação de qualidade e profissionais poderem compartilhar seu conhecimento
-                  </p>
-                 </div>
-               </div>
-               <div class="card">
-                <div class="imageCard card2"></div>
-                 <div class="contentCard">
-                     <span class="titleCard">
-                      Mecanismo de Crescimento Compartilhado
-                     </span>
-               
-                   <p class="descCard">
-                    <br>
-                    Na Mentorize, a aprendizagem gratuita para os alunos se entrelaça com a obtenção de horas práticas comprovadas para quem ensina. 
-<br><br>
-É uma simbiose onde o anseio pelo conhecimento encontra a necessidade de expertise prática, gerando um ciclo virtuoso de crescimento.
-                   </p>
-               
-                 </div>
-               </div>
-               <div class="card">
-                <div class="imageCard card3"></div>
-                 <div class="contentCard">
-                     <span class="titleCard">
-                      Porta para o Futuro Profissional e Acadêmico
-                     </span>
-               
-                   <p class="descCard">
-                    <br>
-                    A cada sessão, os profissionais caminham rumo a um futuro de experiências ricas, enquanto os alunos desbloqueiam portas para o conhecimento. 
-                    <br><br>
-                    Cada interação é um passo em direção a um futuro acadêmico e profissional mais brilhante e promissor.
-                  </div>
-               </div>
-        </div>
-        <a href="cadastro.html" class="porque__button">QUERO ALAVANCAR MEU CRESCIMENTO!</a>
-    </section>
-        <section class="comoFunciona" id="comoFunciona"> 
-            <h2 class="comoFuncionaTitle">Como funciona</h2>
-            <div class="cardsFunciona">
-            <div class="comoFuncionaCards">
-                <h3 class="comoFuncionaDescTitle leftfunciona">SOU <span class="highlighth3">ALUNO</span> (OU PAIS/RESPONSÁVEL)</h3>
-                <p class="comoFuncionaDesc">Na Mentorize, o aprendizado é facilitado e divertido. Explore uma variedade de tópicos, escolha seu mentor e comece sua jornada de aprendizado. Seja para ajuda com os deveres de casa ou para explorar novos interesses, nós temos o que você precisa.</p>
-                <a href="#" class="comoFuncionaDescButton">QUERO SER ALUNO!</a>
-            </div>
-            <div class="comoFuncionaCards">
-                <h3 class="comoFuncionaDescTitle">SOU UM <span class="highlighth3">PROFISSIONAL</span> EM BUSCA DE EXPERIÊNCIA</h3>
-                <p class="comoFuncionaDesc">Adquira horas de ensino comprovadas enquanto faz a diferença na vida dos estudantes. Com a Mentorize, você pode compartilhar seu conhecimento, construir um perfil de ensino respeitável e avançar em sua carreira.</p>
-                <a href="#" class="comoFuncionaDescButton">QUERO SER MENTOR!</a>
+                    <div class="espanhol categoriadiv">
+                        <img src="./assets/img/espanhol.png" alt="">
+                        <p class="nomeCategoria">Espanhol</p>
+                        <p class="porcentagem">78%</p>
+                        <p class="falta faltaEsp">Faltam 22% (4.4 horas) para obter seu certificado de 20 horas</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <img src="./assets/img/estudantes.svg" alt="Estudantes" class="imgFunciona alunosImg">
-        <img src="./assets/img/trabalhador.svg" alt="Trabalhador" class="imgFunciona trabalhadorImg">
-        </section>
-        <section class="faqMain" id="faqSection">
-
-            <h2 class="porqueTitle faqTitleMain">FAQ</h2>
-
-            <div class="faqs-container">
-                <div class="faq">
-                  <h3 class="faq-title">
-                    Como a Mentorize garante a segurança dos usuários?
-                  </h3>
-                  <p class="faq-text">
-                    A segurança é nossa prioridade. Implementamos várias medidas de segurança para garantir uma experiência de aprendizado e ensino segura e positiva para todos os nossos usuários.
-                  </p>
-                  <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-                
-                <div class="faq">
-                  <h3 class="faq-title">
-                    Como faço para começar na Mentorize?
-                  </h3>
-                  <p class="faq-text">
-                    Começar é fácil! Basta criar uma conta, completar seu perfil e você estará pronto para ensinar ou aprender. Nossa comunidade amigável e suporte dedicado estão aqui para ajudá-lo em cada etapa do caminho.
-                    Pronto para transformar e ser transformado? Junte-se à Mentorize agora e embarque em uma jornada de descobertas e crescimento.
-                  </p>
-                  <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-                
-                <div class="faq">
-                  <h3 class="faq-title">
-                    Como posso comprovar minhas horas de ensino?
-                  </h3>
-                  <p class="faq-text">
-                    Com nossa plataforma integrada, registrar e comprovar suas horas de ensino é simplificado. Você terá acesso a um certificado digital que pode ser compartilhado com empregadores ou instituições educacionais.
-                  </p>
-                  <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-                
-                <div class="faq">
-                  <h3 class="faq-title">
-                    Os conteúdos de aprendizado são adequados para todas as idades?
-                  </h3>
-                  <p class="faq-text">
-                    Sim, a Mentorize oferece conteúdos de aprendizado adequados para todas as idades, desde crianças até adultos. Nossa plataforma é projetada para ser intuitiva e fácil de usar, independente da sua idade.
-                  </p>
-                  <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-            </div>
-            <a href="#" class="porque__button faqbotao" align>AINDA PRECISO DE AJUDA</a>
-        </section>
-         <a class="floating-btn" target="_blank" href="https://api.whatsapp.com/send?phone=556183830320&text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20referente%20ao%20projeto%20do%20Mentorize!">Dúvidas?</a>
+        </div>
+        <div class="avaliacoes maindiv"><img src="./assets/img/avaliacoes.png" alt="avaliacoes"></div>
     </main>
+    <script src="mentor.js"></script>
     <footer>
         <div class="above_footer">
             <h3 class="above_footer_title">Encontre a gente em nossas redes sociais!</h3>
@@ -341,11 +206,11 @@
                 <div class="mapa footerlinks">
                     <h2 class="tituloFooter">MAPA DO SITE</h2>
                     <a href="index.html"><p class="footer_paragrafo">Início</p></a>
-                    <a href="sobrenos.html"><p class="footer_paragrafo">Sobre Nós</p></a>
-                    <a href="#comoFunciona"><p class="footer_paragrafo">Como Funciona</p></a>
-                    <a href="#Cursos"><p class="footer_paragrafo">Cursos</p></a>
-                    <a href="login.html"><p class="footer_paragrafo">Para Mentores</p></a>
-                    <a href="login.html"><p class="footer_paragrafo">Para alunos</p></a>
+                        <a href="sobrenos.html"><p class="footer_paragrafo">Sobre Nós</p></a>
+                        <a href="index.html#comoFunciona"><p class="footer_paragrafo">Como Funciona</p></a>
+                        <a href="index.html#Cursos"><p class="footer_paragrafo">Cursos</p></a>
+                        <a href="login.html"><p class="footer_paragrafo">Para Mentores</p></a>
+                        <a href="login.html"><p class="footer_paragrafo">Para alunos</p></a>
                 </div>
                 <div class="suporte footerlinks">
                     <h2 class="tituloFooter">SUPORTE</h2>
@@ -362,8 +227,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="./assets/js/swiper.js"></script>
-    <script src="./assets/js/faq.js"></script>
 </body>
 </html>
