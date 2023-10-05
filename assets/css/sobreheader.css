@@ -78,3 +78,43 @@ line-height: 133.5%;
     flex-direction: column;
     gap: 35px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .sobre_left {
+        display: none;
+    }
+    .sobreMain {
+        height: 500px;
+    }
+}
+
+@media only screen 
+   and (max-width : 768px) {
+    .sobre_left {
+        display: none;
+    }
+
+    .sobre_right {
+        width: 90%;
+        align-self: center;
+    }
+
+   }
+
+   @media only screen 
+   and (max-width : 480px) {
+    .sobreMain {
+        height: 1000px;
+    }
+
+    .sobre_right {
+        width: 90%;
+        align-self: center;
+    }
+
+    .bottom {
+        margin-top: 200px;
+
+    }
+
+   } 

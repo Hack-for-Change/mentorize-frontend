@@ -83,3 +83,49 @@ line-height: normal;
 .dadosSegundo {
     text-align: left;
 }
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen 
+   and (max-width : 768px) {
+    .dados {
+        flex-direction: column;
+        height: 2500px;
+        padding-top: 0px;
+        align-items: center;
+    }
+     .dados_left {
+        align-self: center;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .dados_right {
+        width: 90%;
+    }
+   }
+
+   @media only screen 
+   and (max-width : 480px) {
+
+    .dados {
+        flex-direction: column;
+        height: 3500px;
+        padding-top: 0px;
+    }
+    .dados_left {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
+
+    .dados_right {
+        margin-top: 800px;
+        align-self: center;
+        width: 100%;
+    }
+   } 
