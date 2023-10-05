@@ -1,7 +1,7 @@
 document.getElementById("submitButton").addEventListener("click", function() {
   var email = document.getElementById("email").value;
   var senha = document.getElementById("senha").value;
-  var url = 'http://localhost:8080/login';
+  var url = 'https://localhost:8080/login';
 
   var data = {
     email: email,
