@@ -16,11 +16,9 @@ document.getElementById("submitButton").addEventListener("click", function() {
 
   axios.post(url, data, config)
     .then(response => {
-      console.log(response.data); 
-      console.log("teste")
+      window.href="http://localhost:8080/mentor";
     })
     .catch(error => {
-      console.error('Erro:', error);
-      console.log("testee")
+      window.href="http://localhost:3000/aluno";
     });
 });

@@ -89,6 +89,10 @@
     margin-bottom: 91px;
   }
 
+  .porque__button:hover {
+    background-color: var(--fourth-color);
+  }
+
   @media only screen 
 and (max-width : 1200px) {
 .porque {

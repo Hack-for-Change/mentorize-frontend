@@ -25,11 +25,11 @@ app.get('/sobrenos', (req, res) => {
   res.sendFile(path.join(__dirname, 'mentorize-frontend', 'sobrenos.html'));
 });
 
-app.get('/login', (req, res) => {
+app.get('/mentor', (req, res) => {
   res.sendFile(path.join(__dirname, 'mentorize-frontend', 'mentor.html'));
 });
 
-app.get('/login', (req, res) => {
+app.get('/aluno', (req, res) => {
   res.sendFile(path.join(__dirname, 'mentorize-frontend', 'aluno.html'));
 });
 

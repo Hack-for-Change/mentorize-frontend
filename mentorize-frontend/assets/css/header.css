@@ -6,6 +6,10 @@
     gap: 25px;
 }
 
+.main_nav_link:hover {
+    color: black;
+}
+
 nav {
     display: flex;
     background-color: #c0bceb;
@@ -24,7 +28,7 @@ nav {
     font-weight: 600;
     font-size: 1.12rem;
     text-decoration: none;
-    padding: 0.7% 1.7%;
+    padding: 0.6% 1.5%;
     border-radius: 40px;
     background: #5B5296;
     box-shadow: 1px -1px 5px 0px #3B3561 inset;
@@ -59,6 +63,7 @@ header {
     gap: 25px;
     margin-bottom: 200px;
     justify-content: flex-start;
+    margin-left: 170px;
 }
 
 .header__right {
@@ -88,9 +93,17 @@ header {
     color: var(--white);
 }
 
+.leftheadb:hover {
+    background-color: var(--fourth-color);
+}
+
 .rightheadb {
     color: var(--font-color);
     border: solid 3px var(--font-color);
+}
+
+.rightheadb:hover {
+    background-color: var(--fifth-color);
 }
 
 h1 {
@@ -165,6 +178,7 @@ h1 {
 
     .header__left {
         width: 40%;
+        margin-left: 10%;
     }
 
     header {
