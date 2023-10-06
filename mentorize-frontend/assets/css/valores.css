@@ -65,11 +65,16 @@ text-align: center;
     align-self: center;
     justify-content: center;
     padding-top: 150px;
+    height: 400px;
+    width: 100%;
 }
 
-.videoPlayer {
+
+iframe {
+    border-radius: 10px;
     width: 40%;
 }
+
 
 @media only screen and (max-width: 1200px) {
     .valores__container {
